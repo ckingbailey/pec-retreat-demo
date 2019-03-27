@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,9 @@
             --near-black: rgb(33, 37, 41);
             --bright-grn: #6db943;
             --dk-blue: #255375;
+            position: relative;
+            min-height: 100%;
+            top: 0px;
         }
 
         .main-content {
@@ -26,9 +30,11 @@
         }
     </style>
 </head>
+
 <body>
     <div class="page-holder">
-        <div class="bg-shark relative text-white block w-full z-50 trans trans-fast nav-bar md:bg-shark md:fixed" id="nav-bar">
+        <div class="bg-shark relative text-white block w-full z-50 trans trans-fast nav-bar md:bg-shark md:fixed"
+            id="nav-bar">
             <div class="px-8">
                 <nav class="flex items-center justify-between">
                     <div>
@@ -135,19 +141,65 @@
         </div>
         <main>
             <div class="banner leading-normal">
-                <div class="container mx-auto p-8 py-16">
+                <div class="container mx-auto px-8">
                     <figure class="absolute bg-shark pin z-0">
                         <img class="banner-image opacity-50 z-0 image-blur-none"
                             src="https://cao-94612.s3.amazonaws.com/headers/Downtown-Oakland.jpg"
                             style="object-position:50% 50%;" alt="Downtown Oakland">
                     </figure>
-                    <form class="max-w-md sm:flex relative z-10">
-                        <input type="search" class="w-full mb-0 p-4 border-shark border rounded-none appearance-none sm:flex-1">
-                        <button type="submit" class="w-full btn border-l-0 border-shark border sm:w-auto">Search</button>
-                    </form>
+                    <div
+                        class="container mx-auto relative z-10 text-sm pt-4 pb-3 pl-8 border-white border-l-2 text-white">
+                        <a class="text-cararra hover:text-white hover:underline" href="/">Oakland</a> →
+                        <a class="text-cararra hover:text-white hover:underline" href="/boards-commissions">Boards &amp;
+                            Commissions</a> →
+                        <span class="font-bold">Public Ethics Commission</span>
+                    </div>
+                </div>
+                <div class="relative container mx-auto p-8 py-16 z-10">
+                    <div class="sm:flex">
+                        <div class="hidden pr-8 w-1/6 sm:block">
+                            <ul class="list-reset text-sm">
+                                <li class="my-2"><a class="text-white hover:text-white"
+                                        href="#page-meetings">Meetings</a></li>
+                                <li class="my-2"><a class="text-white hover:text-white"
+                                        href="#page-projects">Projects</a></li>
+                                <li class="my-2"><a class="text-white hover:text-white" href="#page-topics">Topics</a>
+                                </li>
+                                <li class="my-2"><a class="text-white hover:text-white"
+                                        href="#page-services">Services</a></li>
+                                <li class="my-2"><a class="text-white hover:text-white"
+                                        href="#page-resources">Resources</a></li>
+                                <li class="my-2"><a class="text-white hover:text-white" href="#page-news">News</a></li>
+                                <li class="my-2"><a class="text-white hover:text-white" href="#page-about">About</a>
+                                </li>
+                                <li class="my-2"><a class="text-white hover:text-white" href="#page-contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-1">
+                            <h1 class="text-3xl md:text-4xl font-bold mb-0">Public Ethics Commission</h1>
+                            <p class="mb-0">The Public Ethics Commission is an independent commission made up of Oakland
+                                residents and charged with ensuring fairness, openness, honesty and integrity in Oakland
+                                City government.</p>
+                            <a href="https://oakland.granicus.com/boards/w/8552f8c4c0e15460/boards/6716"
+                                class="btn btn-bright px-8 py-2 mt-4 text-sm"
+                                data-custom="custom-data-attribute">Explore Openings on Boards and Commissions</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <section class="bg-rotate">
+                <div class="container mx-auto p-8 py-16">
+                    <form class="max-w-md sm:flex relative z-10">
+                        <input type="search"
+                            class="w-full mb-0 p-4 border-shark border rounded-none appearance-none sm:flex-1">
+                        <button type="submit"
+                            class="w-full btn border-l-0 border-shark border sm:w-auto">Search</button>
+                    </form>
+                </div>
+            </section>
         </main>
     </div>
 </body>
+
 </html>
