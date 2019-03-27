@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PEC Platform demo</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/tailwind.css">
-        <style>
-            body {
-                --near-black: rgb(33, 37, 41);
-                --bright-grn: #6db943;
-                --dk-blue: #255375;
-            }
-            .main-content {
-                min-height: 100vh;
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
-            }
-            .search-container {
-                margin-bottom: 7.5%;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="main-content">
-            <div class="container mx-auto p-8 py-16">
-                <form class="max-w-md sm:flex">
-                    <input type="search" class="w-full mb-0 p-4 border-shark border rounded-none appearance-none sm:flex-1">
-                    <button type="submit" class="w-full btn border-l-0 border-shark border sm:w-auto">Search</button>
-                </form>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PEC Platform demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <style>
+        body {
+            --near-black: rgb(33, 37, 41);
+            --bright-grn: #6db943;
+            --dk-blue: #255375;
+        }
+
+        .main-content {
+            min-height: 100vh;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-container {
+            margin-bottom: 7.5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="container mx-auto p-8 py-16">
+            <figure class="absolute bg-shark pin z-0">
+                <img class="banner-image opacity-50 z-0 image-blur-none"
+                    src="https://cao-94612.s3.amazonaws.com/headers/Downtown-Oakland.jpg"
+                    style="object-position:50% 50%;" alt="Downtown Oakland">
+            </figure>
+            <!-- max-w-md sm:flex -->
+            <form class="container mx-auto relative z-10 text-sm pt-4 pb-3 pl-8 border-white border-l-2 text-white">
+                <input type="search" class="w-full mb-0 p-4 border-shark border rounded-none appearance-none sm:flex-1">
+                <button type="submit" class="w-full btn border-l-0 border-shark border sm:w-auto">Search</button>
+            </form>
         </div>
-    </body>
+    </div>
+</body>
 </html>
