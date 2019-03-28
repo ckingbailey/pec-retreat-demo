@@ -49,6 +49,10 @@ body {
     overflow: auto;
     margin: 0 2rem 2rem 2rem;
     padding: 0 2rem;
+    padding-left:  90px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 20px;
 }
 
 .entry p {
@@ -58,4 +62,23 @@ body {
 
 .details {
     float: right;
+}
+
+.form803 {
+    background-image: url('https://www.flaticon.com/premium-icon/icons/svg/756/756636.svg');
+}
+
+.form802 {
+    background-image: url('https://image.flaticon.com/icons/svg/1061/1061702.svg');
+}
+
+.form700 {
+    background-image: url('https://image.flaticon.com/icons/svg/783/783187.svg');
+}
+
+.form_a {
+    background-image: url('https://www.flaticon.com/premium-icon/icons/svg/756/756647.svg');
+}
+.form460 {
+    background-image: url('https://www.flaticon.com/premium-icon/icons/svg/1363/1363776.svg');
 }
