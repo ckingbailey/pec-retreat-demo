@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PEC Platform demo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/tailwind.css">
     <style>
         body {
@@ -27,8 +30,21 @@
         .search-container {
             margin-bottom: 7.5%;
         }
+
+        #recent .portrait img {
+            height: 150px;
+        }
+
+        #recent div div p {
+            border-bottom: 1px solid #e3e3e3
+        }
+
+        #recent div div p span {
+            float: right;
+        }
     </style>
 </head>
+
 <body>
     <div class="page-holder">
         <div class="bg-shark relative text-white block w-full z-50 trans trans-fast nav-bar md:bg-shark md:fixed"
@@ -148,10 +164,9 @@
                     <div
                         class="container mx-auto relative z-10 text-sm pt-4 pb-3 pl-8 border-white border-l-2 text-white">
                         <a class="text-cararra hover:text-white hover:underline" href="/">Oakland</a> →
-                        <a class="text-cararra hover:text-white hover:underline" href="/">Boards &amp;
+                        <a class="text-cararra hover:text-white hover:underline" href="/boards-commissions">Boards &amp;
                             Commissions</a> →
-                        <a class="text-cararra hover:text-white hover:underline" href="/">Public Ethics Commission</a> →
-                        <span class="font-bold">PEC Open Data Platform</span>
+                        <span class="font-bold">Public Ethics Commission</span>
                     </div>
                 </div>
                 <div class="relative container mx-auto p-8 py-16 z-10">
@@ -176,29 +191,141 @@
                             </ul>
                         </div>
                         <div class="flex-1">
-                            <h1 class="text-3xl md:text-4xl font-bold mb-0">PEC Open Data Platform</h1>
+                            <h1 class="text-3xl md:text-4xl font-bold mb-0">Public Ethics Commission</h1>
                             <p class="mb-0">The Public Ethics Commission is an independent commission made up of Oakland
                                 residents and charged with ensuring fairness, openness, honesty and integrity in Oakland
                                 City government.</p>
+                            <a href="https://oakland.granicus.com/boards/w/8552f8c4c0e15460/boards/6716"
+                                class="btn btn-bright px-8 py-2 mt-4 text-sm"
+                                data-custom="custom-data-attribute">Explore Openings on Boards and Commissions</a>
                         </div>
                     </div>
                 </div>
             </div>
             <section class="bg-rotate">
                 <div class="container mx-auto p-8 py-16">
-                    <div class="flex flex-col sm:flex-row items-center">
-                        <h2 class="my-0 sm:flex-1">Search Records</h2>
-                        <a href="/projects/related-to/public-ethics-commission" class="btn btn-bright mt-4 sm:mt-0">More search options »</a>
-                    </div>
-                    <p class="mb-8">Return all records containing the name entered below</p>
-                    <form class="flex sm:flex max-w-lg" style="margin: auto">
+                    <form class="max-w-md sm:flex relative z-10">
                         <input type="search"
                             class="w-full mb-0 p-4 border-shark border rounded-none appearance-none sm:flex-1">
                         <button type="submit"
                             class="w-full btn border-l-0 border-shark border sm:w-auto">Search</button>
                     </form>
+                </div>
             </section>
+            <div style="display: grid;">
+                <div id="recent" style="margin: 0 auto;">
+                    <figure class="wpb_wrapper vc_figure" style="text-align: center;">
+                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img
+                                class="vc_single_image-img lazyloaded"
+                                src="https://ethics.lacity.org/wp-content/uploads/2017/10/latest_filings-60x60.png"
+                                data-lazy-src="https://ethics.lacity.org/wp-content/uploads/2017/10/latest_filings-60x60.png"
+                                alt="latest-filings-icon" title="Latest Filings" data-was-processed="true" width="60"
+                                height="60"><noscript><img class="vc_single_image-img "
+                                    src="https://ethics.lacity.org/wp-content/uploads/2017/10/latest_filings-60x60.png"
+                                    width="60" height="60" alt="latest-filings-icon" title="Latest Filings"></noscript>
+                        </div>
+                    </figure>
+                    <h1 style="text-align: center;">Latest filings</h1>
+                    <div class="sm:flex">
+                        <div class="hidden pr-8 w-1/6 sm:block"><img
+                                src="https://ethics.lacity.org/icons/program/lobbying-small.png" /></div>
+                        <div class="flex-1">
+                            <p class="name">Lyle Lanley <span><a href="#"></a></span></p>
+                            <p class="committee">Monorail Systems<span><a href="#">see all activities</a></span></p>
+                            <p class="type">Lobbyist Registration<span><a href="#">see registration details</a></span>
+                            </p>
+
+                        </div>
+                        <div class="flex-1 portrait">
+                            <img
+                                src="https://vignette.wikia.nocookie.net/simpsons/images/1/15/Lyle_Lanley_Tapped_Out.png/revision/latest?cb=20180401214124" />
+                        </div>
+                    </div>
+                    <div class="sm:flex">
+                        <div class="hidden pr-8 w-1/6 sm:block"><img
+                                src="https://ethics.lacity.org/icons/program/campaigns-small.png" /></div>
+                        <div class="flex-1">
+                            <p class="name">Krusty the Clown
+                                <span><a href="#"></a></span></p>
+                            <p class="committee">Quimby for Mayor 2020<span><a href="#">see all donations</a></span></p>
+                            <p class="date">Date of activity: 1/15/2019</p>
+                            <p class="type">Activity type: Campaign donation<span><a href="#">read the filing</a></span>
+                            </p>
+
+                        </div>
+                        <div class="flex-1 portrait">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Krustytheclown.png/220px-Krustytheclown.png" />
+                        </div>
+                    </div>
+                    <div class="sm:flex">
+                        <div class="hidden pr-8 w-1/6 sm:block"><img
+                                src="https://ethics.lacity.org/icons/program/campaigns-small.png" /></div>
+                        <div class="flex-1">
+                            <p class="name">Mayor Joseph Fitzgerald O'Malley Fitzpatrick O'Donnell The Edge Quimby
+                                <span><a href="#">see all activities</a></span></p>
+                            <p class="committee">Quimby for Mayor 2020<span><a href="#">see all activities</a></span>
+                            </p>
+                            <p class="date">Date of activity: 1/22/2019</p>
+                            <p class="type">Activity type: Campaign email<span><a href="#">read the Campaign
+                                        email</a></span></p>
+
+                        </div>
+                        <div class="flex-1 portrait">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Mayor_Quimby.png/220px-Mayor_Quimby.png" />
+                        </div>
+                    </div>
+                    <div class="sm:flex">
+                        <div class="hidden pr-8 w-1/6 sm:block"><img
+                                src="https://ethics.lacity.org/icons/program/lobbying-small.png" /></div>
+                        <div class="flex-1">
+                            <p class="name">Marge Simpson<span><a href="#"></a></span></p>
+                            <p class="committee">Springfield against Monorail<span><a href="#">see all
+                                        activities</a></span>
+                            </p>
+                            <p class="type">Lobbyist Information Training Completion Certificate<span><a
+                                        href="#"></a></span></p>
+
+                        </div>
+                        <div class="flex-1 portrait">
+                            <img
+                                src="https://vignette.wikia.nocookie.net/simpsons/images/0/0b/Marge_Simpson.png/revision/latest/scale-to-width-down/292?cb=20180626055729" />
+                        </div>
+                    </div>
+                    <div class="sm:flex">
+                        <div class="hidden pr-8 w-1/6 sm:block"><img
+                                src="https://ethics.lacity.org/icons/program/ethics-small.png" /></div>
+                        <div class="flex-1">
+                            <p class="name">Chief Clarence "Clancy" Wiggum<span><a href="#"></a></span></p>
+                            <p class="description">Safety review board of proposed project<span><a href="#"></a></span>
+                            </p>
+                            <p class="type">Recusal<span><a href="#">see details</a></span></p>
+
+                        </div>
+                        <div class="flex-1 portrait">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Chief_Wiggum.png/220px-Chief_Wiggum.png" />
+                        </div>
+                    </div>
+                    <div class="sm:flex">
+                        <div class="hidden pr-8 w-1/6 sm:block"><img
+                                src="https://ethics.lacity.org/icons/program/contracts-small.png" /></div>
+                        <div class="flex-1">
+                            <p class="name">Springfield Nuclear Power Plant<span><a href="#"></a></span></p>
+                            <p class="description">Transportation Planning Services<span><a href="#"></a></span></p>
+                            <p class="type">Contract<span><a href="#">see detail</a></span></p>
+
+                        </div>
+                        <div class="flex-1 portrait">
+                            <img />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </main>
     </div>
 </body>
+
 </html>
