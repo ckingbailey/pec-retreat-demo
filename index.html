@@ -6,8 +6,6 @@
     <title>PEC Platform demo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/tailwind.css">
     <style>
         body {
@@ -164,9 +162,10 @@
                     <div
                         class="container mx-auto relative z-10 text-sm pt-4 pb-3 pl-8 border-white border-l-2 text-white">
                         <a class="text-cararra hover:text-white hover:underline" href="/">Oakland</a> →
-                        <a class="text-cararra hover:text-white hover:underline" href="/boards-commissions">Boards &amp;
+                        <a class="text-cararra hover:text-white hover:underline" href="/">Boards &amp;
                             Commissions</a> →
-                        <span class="font-bold">Public Ethics Commission</span>
+                        <a class="text-cararra hover:text-white hover:underline" href="/">Public Ethics Commission</a> →
+                        <span class="font-bold">PEC Open Data Platform</span>
                     </div>
                 </div>
                 <div class="relative container mx-auto p-8 py-16 z-10">
@@ -191,26 +190,27 @@
                             </ul>
                         </div>
                         <div class="flex-1">
-                            <h1 class="text-3xl md:text-4xl font-bold mb-0">Public Ethics Commission</h1>
+                            <h1 class="text-3xl md:text-4xl font-bold mb-0">PEC Open Data Platform</h1>
                             <p class="mb-0">The Public Ethics Commission is an independent commission made up of Oakland
                                 residents and charged with ensuring fairness, openness, honesty and integrity in Oakland
                                 City government.</p>
-                            <a href="https://oakland.granicus.com/boards/w/8552f8c4c0e15460/boards/6716"
-                                class="btn btn-bright px-8 py-2 mt-4 text-sm"
-                                data-custom="custom-data-attribute">Explore Openings on Boards and Commissions</a>
                         </div>
                     </div>
                 </div>
             </div>
             <section class="bg-rotate">
                 <div class="container mx-auto p-8 py-16">
-                    <form class="max-w-md sm:flex relative z-10">
+                    <div class="flex flex-col sm:flex-row items-center">
+                        <h2 class="my-0 sm:flex-1">Search Records</h2>
+                        <a href="/projects/related-to/public-ethics-commission" class="btn btn-bright mt-4 sm:mt-0">More search options »</a>
+                    </div>
+                    <p class="mb-8">Return all records containing the name entered below</p>
+                    <form class="flex sm:flex max-w-lg" style="margin: auto">
                         <input type="search"
                             class="w-full mb-0 p-4 border-shark border rounded-none appearance-none sm:flex-1">
                         <button type="submit"
                             class="w-full btn border-l-0 border-shark border sm:w-auto">Search</button>
                     </form>
-                </div>
             </section>
             <div style="display: grid;">
                 <div id="recent" style="margin: 0 auto;">
