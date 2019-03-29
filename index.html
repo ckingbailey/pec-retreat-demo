@@ -278,13 +278,100 @@
                     <p class="mb-8">Return all records containing the name entered below</p>
                     <form class="flex sm:flex max-w-lg" style="margin: auto">
                         <input type="search"
+                            id="search-box"
                             class="w-full mb-0 p-4 border-shark border rounded-none appearance-none sm:flex-1">
-                        <button type="submit"
-                            class="w-full btn border-l-0 border-shark border sm:w-auto">Search</button>
+                        <button type="button"
+                            class="w-full btn border-l-0 border-shark border sm:w-auto"
+                            onclick="return showSearchResults(event)"
+                        >Search</button>
                     </form>
+                    <div id="search-results" style="display: none;">
+                        <div style="margin: 0 auto;">
+                            <figure class="wpb_wrapper vc_figure" style="text-align: center;">
+                                <div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img lazyloaded" src="https://www.flaticon.com/premium-icon/icons/svg/756/756633.svg" data-lazy-src="https://ethics.lacity.org/wp-content/uploads/2017/10/latest_filings-60x60.png" alt="latest-filings-icon" title="Latest Filings" data-was-processed="true" width="60" height="60"><noscript><img class="vc_single_image-img "
+                                            src="https://www.flaticon.com/premium-icon/icons/svg/756/756633.svg"
+                                            width="60" height="60" alt="latest-filings-icon"
+                                            title="Latest Filings"></noscript></div>
+                            </figure>
+                            <h1 style="text-align: center;">Search Result</h1>
+                            <h2>Joseph Fitzgerald O'Malley Fitzpatrick O'Donnell The Edge Quimby</h2>
+                            <div class="form-group">
+                                <h3>Campaign Filings</h3>
+                                <div class="entry form460">
+                                    <h4>Contributor Name</h4>
+                                    <p>Form 460</p>
+                                    <p>Date: 3/25/2019</p>
+                                    <p>Amount: $25</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h3>Lobbyist Filings</h3>
+                                <div class="entry form_a">
+                                    <h4>Lyle Lanley</h4>
+                                    <p>Form 2019 Lobbyist Disclosure Form: Schedule A</p>
+                                    <p>Springfield Monorail Authority</p>
+                                    <p>Lobbying Joseph Quimby, Mayor in favor of: Construction of new luxury condos near
+                                        downtown monorail
+                                        stop</p>
+                                    <p><span class="details"><a href="#">details</a></span></p>
+                                </div>
+                                <div class="entry form_a">
+                                    <h4>Marge Simpson</h4>
+                                    <p>Form 2019 Lobbyist Disclosure Form: Schedule A</p>
+                                    <p>Springfield against Monorail</p>
+                                    <p>Lobbying Joseph Quimby, Mayor to oppose: Construction of monorail system</p>
+                                    <p><span class="details"><a href="#">details</a></span></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <h3>Ethics Filings</h3>
+                                <div class="entry form700">
+                                    <h4>Shareholder disclosure</h4>
+                                    <p>Form 700</p>
+                                    <p>Joseph Quimby, Mayor</p>
+                                    <p>Springfield Nuclear Power - (<a href="#">5 contracts</a> automatically found)</p>
+                                    <p>1/10/2018</p>
+                                    <p><span class="details"><a href="#">details</a></span></p>
+                                </div>
+                                <div class="entry form802">
+                                    <h4>Tickets, Springfield Isotopes Softball Game</h4>
+                                    <p>Form 802</p>
+                                    <p>Joseph Quimby, Mayor</p>
+                                    <p>Lyle Lanley - (<a href="#">177 filings</a> automatically found)</p>
+                                    <p>9/23/2016</p>
+                                    <p>$350<span class="details"><a href="#">details</a></span></p>
+                                </div>
+                                <div class="entry form803">
+                                    <h4>Children's Fund for Improved Water Safety</h4>
+                                    <p>Form 803: Behested Payment</p>
+                                    <p>Joseph Quimby, Mayor</p>
+                                    <p>Mr. Burns - (<a href="#">150 contributions</a> automatically found)</p>
+                                    <p>4/1/2018</p>
+                                    <p>$10M<span class="details"><a href="#">details</a></span></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
             </section>
         </main>
     </div>
+    <script>
+        function showSearchResults(ev) {
+            ev.preventDefault();
+            const res = document.getElementById('search-results');
+            res.style.display = 'grid';
+            window.scrollTo({
+                left: 0,
+                top: document.getElementById('search-box').offsetTop - 144,
+                behavior: 'smooth'
+            });
+
+            console.log(Object.getPrototypeOf(res));
+        }
+    </script>
 </body>
 
 </html>
