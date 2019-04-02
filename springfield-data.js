@@ -128,6 +128,28 @@ var springfieldData = {
                     cy: -10
                 }
             },
+            'quimby-plant': {
+                id: 'quimby-plant',
+                node1_id: 'quimby',
+                node2_id: 'plant',
+                display: {
+                    label: 'Beheast payment to CEFMA',
+                    arrow: true,
+                    cx: 2,
+                    cy: -25
+                }
+            },
+            'plant-project': {
+                id: 'plant-project',
+                node1_id: 'plant',
+                node2_id: 'quimby_project',
+                display: {
+                    label: 'Beheasted payment',
+                    arrow: true,
+                    cx: -25,
+                    cy: -25
+                }
+            },
             'lyle-plant': {
                 id: 'lyle-plant',
                 node1_id: 'plant',
@@ -136,8 +158,8 @@ var springfieldData = {
                     label: 'Funds',
                     scale: 1,
                     arrow: true,
-                    cx: 20,
-                    cy: 1
+                    cx: 25,
+                    cy: -10
                 }
             },
             'julius-quimby_committee': {
@@ -149,6 +171,17 @@ var springfieldData = {
                     arrow: true,
                     cx: -20,
                     cy: 2
+                }
+            },
+            'manjula-committee': {
+                id: 'manjula-committee',
+                node1_id: 'manjula',
+                node2_id: 'opposition_committee',
+                display: {
+                    label: 'Donation',
+                    arrow: true,
+                    cx: 2,
+                    cy: -20
                 }
             }
         },
