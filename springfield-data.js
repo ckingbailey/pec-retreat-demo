@@ -27,7 +27,7 @@ var springfieldData = {
                 id: 'quimby_project',
                 display: {
                     name: 'Children\'s Education Fund for Mayoral Aggrandizement',
-                    image: '/Simpsons_06_04_P2_640x360_312576067965.jpg',
+                    image: './Simpsons_06_04_P2_640x360_312576067965.jpg',
                     x: 12,
                     y: 185
                 }
