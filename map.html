@@ -5,6 +5,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <script src="springfield-data.js" type="application/javascript"></script>
+        <style>
+            #influence-map {
+                width: 100vw;
+                height: 100vh;
+            }
+        </style>
     </head>
     <body>
         <div id="influence-map"></div>
@@ -13,17 +20,17 @@
             const elem = document.getElementById('influence-map');
             var config = { 
                 root: elem,
-                data: data,   // initial graph data to load and display (null by default)
-                isEditor: true,   // if true, clicking nodes or edges selects them; if false, clicking highlights (false by defaut)
-                isLocked: false,   // if true, nodes and edges cannot be dragged by the user
+                data: springfieldData,   // initial graph data to load and display (null by default)
+                isEditor: false,   // if true, clicking nodes or edges selects them; if false, clicking highlights (false by defaut)
+                isLocked: true,   // if true, nodes and edges cannot be dragged by the user
                 viewOnlyHighlighted: false,   // center viewbox around highlighted content
-                dataSource: LsDataSource,   // API wrapper for importing nodes and edges from a data source, see build/LsDataSource.js for an example
-                user: { name: "Kevin", url: "http://littlesis.org/user/kevin" },   // optional author data to display
-                date: "August 30, 2015",   // optional date data to display
+                // dataSource: LsDataSource,   // API wrapper for importing nodes and edges from a data source, see build/LsDataSource.js for an example
+                user: { name: "CKB", url: "ckingbailey.com" },   // optional author data to display
+                date: "April 1, 2019",   // optional date data to display
                 startAnnotation: 0,   // index of annotation to load initially
-                showSaveButton: true,   // show a save button
-                onSave: function(data) { console.log(data); },   // callback triggered by save button
-                onNav: function(index) { console.log("navigating to annotation " + String(index)); },   // callback triggered by annotation navigation buttons
+                showSaveButton: false,   // show a save button
+                // onSave: function(data) { console.log(data); },   // callback triggered by save button
+                // onNav: function(index) { console.log("navigating to annotation " + String(index)); },   // callback triggered by annotation navigation buttons
                 links: [
                     { text: "some", url: "http://some.net" },
                     { id: "exampleLink", text: "example", url: "http://example.com" },
@@ -33,12 +40,9 @@
                     is_private: false,
                     is_featured: false
                 },   // checkboxes with initial values to appear on the settings screen; settings are included in data setn to onSave callback
-                logActions: false   // for development purposes, logs all Redux actions to the browser console
+                logActions: true   // for development purposes, logs all Redux actions to the browser console
                 }
-            const oli = new Oligrapher({
-                root: elem,
-                isEditor: true
-            });
+            const oli = new Oligrapher(config);
         </script>
     </body>
 </html>
