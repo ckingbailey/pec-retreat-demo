@@ -20,7 +20,7 @@
             var config = { 
                 root: elem,
                 data: springfieldData,   // initial graph data to load and display (null by default)
-                isEditor: true,   // if true, clicking nodes or edges selects them; if false, clicking highlights (false by defaut)
+                isEditor: false,   // if true, clicking nodes or edges selects them; if false, clicking highlights (false by defaut)
                 isLocked: false,   // if true, nodes and edges cannot be dragged by the user
                 viewOnlyHighlighted: false,   // center viewbox around highlighted content
                 // dataSource: LsDataSource,   // API wrapper for importing nodes and edges from a data source, see build/LsDataSource.js for an example
@@ -31,9 +31,8 @@
                 // onSave: function(data) { console.log(data); },   // callback triggered by save button
                 // onNav: function(index) { console.log("navigating to annotation " + String(index)); },   // callback triggered by annotation navigation buttons
                 links: [
-                    { text: "some", url: "http://some.net" },
-                    { id: "exampleLink", text: "example", url: "http://example.com" },
-                    { method: "POST", text: "clone", url: "http://lilsis.local/maps/118-satoshi/clone" }
+                    { text: "Home", url: "/" },
+                    { id: "exampleLink", text: "Oakland PEC", url: "https://www.oaklandca.gov/boards-commissions/public-ethics-commission" }
                 ],   // links to display beside the title, author, and date; text attributes are required, url, id, method, and target attributes are optional
                 settings: {
                     is_private: false,
