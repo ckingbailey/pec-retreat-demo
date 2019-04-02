@@ -20,7 +20,7 @@ body {
     margin-bottom: 7.5%;
 }
 
-#recent .portrait img {
+.portrait {
     height: 150px;
 }
 

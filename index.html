@@ -7,7 +7,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <!-- <link rel="stylesheet" href="css/custom.css"> -->
+    <style>
+        .portrait {
+            width: 150px;
+        }
+        .portrait img {
+            height: 150px;
+        }
+    </style>
 </head>
 
 <body>
@@ -165,135 +173,159 @@
                     </div>
                 </div>
             </div>
-
-            <button id="myButton" class="float-left submit-button">Home</button>
-            <section class="bg-rotate">
+            <section id="recent" class="bg-rotate">
                 <div class="container mx-auto p-8 py-16">
-                    <div class="flex flex-col sm:flex-row items-center">
-                        <h2 class="my-0 sm:flex-1">Search Records</h2>
-                        <a href="/projects/related-to/public-ethics-commission" class="btn btn-bright mt-4 sm:mt-0">More
-                            search options »</a>
-                    </div>
-                    <p class="mb-8">Return all records containing the name entered below</p>
-                    <form class="flex sm:flex max-w-lg" style="margin: auto">
-                        <input type="search"
-                            class="w-full mb-0 p-4 border-shark border rounded-none appearance-none sm:flex-1">
-                        <button type="submit"
-                            class="w-full btn border-l-0 border-shark border sm:w-auto">Search</button>
-                    </form>
-            </section>
-            <div style="display: grid;">
-                <div id="recent" style="margin: 0 auto;">
-                    <figure class="wpb_wrapper vc_figure" style="text-align: center;">
-                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img
+                    <div class="mb-8 flex flex-col sm:flex-row items-center">
+                        <h2 class="my-0 sm:flex-1">Latest filings</h2>
+                        <figure class="wpb_wrapper vc_figure" style="text-align: center;">
+                            <div class="vc_single_image-wrapper   vc_box_border_grey"><img
                                 class="vc_single_image-img lazyloaded"
                                 src="https://ethics.lacity.org/wp-content/uploads/2017/10/latest_filings-60x60.png"
                                 data-lazy-src="https://ethics.lacity.org/wp-content/uploads/2017/10/latest_filings-60x60.png"
                                 alt="latest-filings-icon" title="Latest Filings" data-was-processed="true" width="60"
                                 height="60"><noscript><img class="vc_single_image-img "
-                                    src="https://ethics.lacity.org/wp-content/uploads/2017/10/latest_filings-60x60.png"
-                                    width="60" height="60" alt="latest-filings-icon" title="Latest Filings"></noscript>
-                        </div>
-                    </figure>
-                    <h1 style="text-align: center;">Latest filings</h1>
-                    <div class="sm:flex">
-                        <div class="hidden pr-8 w-1/6 sm:block"><img
-                                src="https://ethics.lacity.org/icons/program/lobbying-small.png" /></div>
-                        <div class="flex-1">
-                            <p class="name">Lyle Lanley <span><a href="#"></a></span></p>
-                            <p class="committee">Monorail Systems<span><a href="#">see all activities</a></span></p>
-                            <p class="type">Lobbyist Registration<span><a href="#">see registration details</a></span>
-                            </p>
-
-                        </div>
-                        <div class="flex-1 portrait">
-                            <img
-                                src="https://vignette.wikia.nocookie.net/simpsons/images/1/15/Lyle_Lanley_Tapped_Out.png/revision/latest?cb=20180401214124" />
-                        </div>
+                                src="https://ethics.lacity.org/wp-content/uploads/2017/10/latest_filings-60x60.png"
+                                width="60" height="60" alt="latest-filings-icon" title="Latest Filings"></noscript>
+                            </div>
+                        </figure>
                     </div>
-                    <div class="sm:flex">
-                        <div class="hidden pr-8 w-1/6 sm:block"><img
-                                src="https://ethics.lacity.org/icons/program/campaigns-small.png" /></div>
-                        <div class="flex-1">
-                            <p class="name">Krusty the Clown
-                                <span><a href="#"></a></span></p>
-                            <p class="committee">Quimby for Mayor 2020<span><a href="#">see all donations</a></span></p>
-                            <p class="date">Date of activity: 1/15/2019</p>
-                            <p class="type">Activity type: Campaign donation<span><a href="#">read the filing</a></span>
-                            </p>
-
-                        </div>
-                        <div class="flex-1 portrait">
-                            <img
-                                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Krustytheclown.png/220px-Krustytheclown.png" />
-                        </div>
-                    </div>
-                    <div class="sm:flex">
-                        <div class="hidden pr-8 w-1/6 sm:block"><img
-                                src="https://ethics.lacity.org/icons/program/campaigns-small.png" /></div>
-                        <div class="flex-1">
-                            <p class="name">Mayor Joseph Fitzgerald O'Malley Fitzpatrick O'Donnell The Edge Quimby
-                                <span><a href="#">see all activities</a></span></p>
-                            <p class="committee">Quimby for Mayor 2020<span><a href="#">see all activities</a></span>
-                            </p>
-                            <p class="date">Date of activity: 1/22/2019</p>
-                            <p class="type">Activity type: Campaign email<span><a href="#">read the Campaign
-                                        email</a></span></p>
-
-                        </div>
-                        <div class="flex-1 portrait">
-                            <img
-                                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Mayor_Quimby.png/220px-Mayor_Quimby.png" />
-                        </div>
-                    </div>
-                    <div class="sm:flex">
-                        <div class="hidden pr-8 w-1/6 sm:block"><img
-                                src="https://ethics.lacity.org/icons/program/lobbying-small.png" /></div>
-                        <div class="flex-1">
-                            <p class="name">Marge Simpson<span><a href="#"></a></span></p>
-                            <p class="committee">Springfield against Monorail<span><a href="#">see all
-                                        activities</a></span>
-                            </p>
-                            <p class="type">Lobbyist Information Training Completion Certificate<span><a
-                                        href="#"></a></span></p>
-
-                        </div>
-                        <div class="flex-1 portrait">
-                            <img
-                                src="https://vignette.wikia.nocookie.net/simpsons/images/0/0b/Marge_Simpson.png/revision/latest/scale-to-width-down/292?cb=20180626055729" />
-                        </div>
-                    </div>
-                    <div class="sm:flex">
-                        <div class="hidden pr-8 w-1/6 sm:block"><img
-                                src="https://ethics.lacity.org/icons/program/ethics-small.png" /></div>
-                        <div class="flex-1">
-                            <p class="name">Chief Clarence "Clancy" Wiggum<span><a href="#"></a></span></p>
-                            <p class="description">Safety review board of proposed project<span><a href="#"></a></span>
-                            </p>
-                            <p class="type">Recusal<span><a href="#">see details</a></span></p>
-
-                        </div>
-                        <div class="flex-1 portrait">
-                            <img
-                                src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Chief_Wiggum.png/220px-Chief_Wiggum.png" />
-                        </div>
-                    </div>
-                    <div class="sm:flex">
-                        <div class="hidden pr-8 w-1/6 sm:block"><img
-                                src="https://ethics.lacity.org/icons/program/contracts-small.png" /></div>
-                        <div class="flex-1">
-                            <p class="name">Springfield Nuclear Power Plant<span><a href="#"></a></span></p>
-                            <p class="description">Transportation Planning Services<span><a href="#"></a></span></p>
-                            <p class="type">Contract<span><a href="#">see detail</a></span></p>
-
-                        </div>
-                        <div class="flex-1 portrait">
-                            <img />
-                        </div>
+                    <div class="card-grid px-16 vertical-cards">
+                        <article class="sm:flex mb-8">
+                            <div class="mb-2 sm:flex items-center">
+                                <img src="https://ethics.lacity.org/icons/program/lobbying-small.png" />
+                            </div>
+                            <div class="mx-20 flex-1">
+                                <h3 class="text-2xl mb-4">Lyle Lanley</h3>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">
+                                    <span>Monorail Systems</span>
+                                    <a href="#">see all activities</a>
+                                </div>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">
+                                    <span>Lobbyist Registration</span>
+                                    <a href="#">see registration details</a>
+                                </div>
+                            </div>
+                            <div class="portrait sm:flex items-end">
+                                <img
+                                    src="https://vignette.wikia.nocookie.net/simpsons/images/1/15/Lyle_Lanley_Tapped_Out.png/revision/latest?cb=20180401214124"
+                                />
+                            </div>
+                        </article>
+                        <article class="sm:flex mb-8">
+                            <div class="mb-2 sm:flex items-center">
+                                <img src="https://ethics.lacity.org/icons/program/campaigns-small.png" />
+                            </div>
+                            <div class="mx-20 flex-1">
+                                <h3 class="text-2xl mb-4">Dr. Julius Hibbert</h3>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">
+                                    <span>Quimby for Mayor 2020</span>
+                                    <a href="#">see all donations</a>
+                                </div>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">Date of activity: 9/15/2018</div>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">
+                                    <span>Activity type: Campaign donation</span>
+                                    <a href="#">read the filing</a>
+                                </div>
+                            </div>
+                            <div class="portrait sm:flex items-end">
+                                <img
+                                    src="https://vignette.wikia.nocookie.net/simpsons/images/6/67/Tapped_Out_Unlock_DrHibbert.png/revision/latest?cb=20141120144510" />
+                            </div>
+                        </article>
+                        <article class="sm:flex mb-8">
+                            <div class="mb-2 sm:flex items-center">
+                                <img src="https://ethics.lacity.org/icons/program/campaigns-small.png" />
+                            </div>
+                            <div class="mx-20 flex-1">
+                                <h3 class="text-2xl mb-4">
+                                    <span>Mayor Joseph Fitzgerald O'Malley Fitzpatrick O'Donnell The Edge Quimby</span>
+                                    <a class="text-lg" href="#">see all activities</a>
+                                </h3>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">
+                                    <span>Quimby for Mayor 2020</span>
+                                    <a href="#">see all activities</a>
+                                </div>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">Date of activity: 1/22/2019</div>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">
+                                    <span>Activity type: Campaign email</span>
+                                    <a href="#">read the Campaign email</a>
+                                </div>
+                            </div>
+                            <div class="portrait sm:flex items-end">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Mayor_Quimby.png/220px-Mayor_Quimby.png" />
+                            </div>
+                        </article>
+                        <article class="sm:flex mb-8">
+                            <div class="mb-2 sm:flex items-center">
+                                <img src="https://ethics.lacity.org/icons/program/lobbying-small.png" />
+                            </div>
+                            <div class="mx-20 flex-1">
+                                <h3 class="text-2xl mb-4">Manjula Nahasapeemapetilon</h3>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">
+                                    <span>Springfield against Monorail</span>
+                                    <a href="#">see all activities</a>
+                                </div>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">Lobbyist Information Training
+                                    Completion Certificate</div>
+                            </div>
+                            <div class="portrait sm:flex items-end">
+                                <img
+                                    src="https://vignette.wikia.nocookie.net/simpsons/images/c/c7/New_Manjula_Nahasapeemapetilon_image.png/revision/latest?cb=20141207232917" />
+                            </div>
+                        </article>
+                        <article class="sm:flex mb-8">
+                            <div class="mb-2 sm:flex items-center">
+                                <img src="https://ethics.lacity.org/icons/program/ethics-small.png" />
+                            </div>
+                            <div class="mx-20 flex-1">
+                                <h3 class="text-2xl mb-4">Lou</h3>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">Safety review board of proposed project</div>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">
+                                    <span>Recusal</span>
+                                    <a href="#">see details</a>
+                                </div>
+                            </div>
+                            <div class="portrait sm:flex items-end">
+                                <img
+                                    src="https://vignette.wikia.nocookie.net/simpsons/images/1/17/Lou.png/revision/latest?cb=20130816173729" />
+                            </div>
+                        </article>
+                        <article class="sm:flex mb-8">
+                            <div class="mb-2 sm:flex items-center">
+                                <img src="https://ethics.lacity.org/icons/program/contracts-small.png" />
+                            </div>
+                            <div class="mx-20 flex-1">
+                                <h3 class="text-2xl mb-4">Springfield Nuclear Power Plant</h3>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">
+                                        <span>Contract</span>
+                                        <a href="#">see details</a>
+                                </div>
+                                <div class="border-b border-celeste sm:flex justify-between text-shark mb-2">Transportation Planning Services</div>
+                            </div>
+                            <div class="portrait sm:flex items-end">
+                                <img
+                                    src="https://vignette.wikia.nocookie.net/simpsons/images/c/c7/SmilinJoeFission.gif/revision/latest?cb=20101204223425" />
+                            </div>
+                        </article>
                     </div>
                 </div>
-            </div>
-
+            </section>
+            <section id="search" class="bg-rotate">
+                <div class="container mx-auto p-8 py-16">
+                    <h2 class="my-0 sm:flex-1">Search Records</h2>
+                    <p class="mb-8">Search public records related to campaigns, contracts, lobbying and more</p>
+                    <form class="mb-8 flex sm:flex">
+                        <input type="search"
+                            class="w-full mb-0 p-4 border-shark border rounded-none appearance-none sm:flex-1">
+                        <button type="submit"
+                            class="w-full btn border-l-0 border-shark border sm:w-auto">Search</button>
+                    </form>
+                    <div>
+                        <a href="/projects/related-to/public-ethics-commission">More
+                            search options »</a>
+                    </div>
+        </section>
         </main>
     </div>
 </body>
