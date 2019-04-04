@@ -9,7 +9,7 @@ var springfieldData = {
                     "y": -64.41392962633171,
                     "scale": 3,
                     name: 'Mayor Joseph Quimby',
-                    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Mayor_Quimby.png/220px-Mayor_Quimby.png',
+                    image: './img/quimby.png',
                     "color": "#ccc"
                 }
             },
