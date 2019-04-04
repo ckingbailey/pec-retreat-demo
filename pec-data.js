@@ -106,6 +106,38 @@ var data = {
                     "x": 235,
                     "y": 22
                 }
+            },
+            "spouse": {
+                "id": "spouse",
+                "display": {
+                    "name": "Official's spouse/family",
+                    "scale": 0.5,
+                    "status": "normal",
+                    "image": "",
+                    "url": "",
+                    "x": 250,
+                    "y": 120
+                }
+            },
+            "business": {
+                "id": "business",
+                "display": {
+                    "name": "Business and industry groups",
+                    "scale": 1,
+                    "x": -275,
+                    "y": 120,
+                    "status": "normal"
+                }
+            },
+            "4JgbfXyYL": {
+                "id": "4JgbfXyYL",
+                "display": {
+                    "x": -373.99999999999994,
+                    "y": 0.6666666666666643,
+                    "scale": 1,
+                    "status": "normal",
+                    "name": "Lobbyists"
+                }
             }
         },
         "edges": {
@@ -250,8 +282,8 @@ var data = {
                     "cy": -30,
                     "x1": 0,
                     "y1": 0,
-                    "x2": 232.4024143612971,
-                    "y2": -149.37249051655618,
+                    "x2": 235,
+                    "y2": 22,
                     "s1": 1.5,
                     "s2": 0.5
                 }
@@ -271,11 +303,94 @@ var data = {
                     "cy": -30,
                     "x1": 0,
                     "y1": 0,
-                    "x2": 235,
-                    "y2": 22,
+                    "x2": 232.4024143612971,
+                    "y2": -149.37249051655618,
                     "s1": 1.5,
                     "s2": 0.5
                 }
+            },
+            "income_spouse": {
+                "id": "income_spouse",
+                "node1_id": "outside_income",
+                "node2_id": "spouse",
+                "display": {
+                    "label": "Private interests (Form 700)",
+                    "url": "",
+                    "scale": 1,
+                    "status": "normal",
+                    "arrow": false,
+                    "dash": null,
+                    "cx": -7,
+                    "cy": -30,
+                    "x1": 207.71003717472115,
+                    "y1": 128.43866171003717,
+                    "x2": 250,
+                    "y2": 120,
+                    "s1": 0.5,
+                    "s2": 0.5
+                }
+            },
+            "business_official": {
+                "id": "business_official",
+                "node1_id": "business",
+                "node2_id": "elected_official",
+                "display": {
+                    "label": "Donation request (Form 803)",
+                    "url": "",
+                    "scale": 1,
+                    "status": "normal",
+                    "arrow": false,
+                    "dash": true,
+                    "cx": -7,
+                    "cy": -30,
+                    "x1": -275,
+                    "y1": 120,
+                    "x2": 0,
+                    "y2": 0,
+                    "s1": 1,
+                    "s2": 1.5
+                }
+            },
+            "business_gifts": {
+                "id": "business_gifts",
+                "node1_id": "business",
+                "node2_id": "gifts",
+                "display": {
+                    "label": "Speaking engagements, conferences, etc. (Form 803)",
+                    "url": "",
+                    "scale": 1,
+                    "status": "normal",
+                    "arrow": false,
+                    "dash": null,
+                    "cx": -7,
+                    "cy": -30,
+                    "x1": -275,
+                    "y1": 120,
+                    "x2": -199.56877323420073,
+                    "y2": 100.86245353159852,
+                    "s1": 1,
+                    "s2": 0.5
+                }
+            },
+            "NkSOMm1tU": {
+                "id": "NkSOMm1tU",
+                "display": {
+                    "scale": 1,
+                    "arrow": true,
+                    "status": "normal",
+                    "label": "Explicit contributions (Lobbyist report)",
+                    "x1": -373.99999999999994,
+                    "y1": 0.6666666666666643,
+                    "x2": -275,
+                    "y2": 120,
+                    "s1": 1,
+                    "s2": 1,
+                    "dash": true,
+                    "cx": 31.96666666666667,
+                    "cy": -26.283333333333328
+                },
+                "node1_id": "4JgbfXyYL",
+                "node2_id": "business"
             }
         },
         "captions": {}
