@@ -20,7 +20,7 @@ var springfieldData = {
                     "y": -282.5497269153774,
                     "scale": 2,
                     name: 'Manjula Nahasapeemapetilon',
-                    image: 'https://vignette.wikia.nocookie.net/simpsons/images/c/c7/New_Manjula_Nahasapeemapetilon_image.png/revision/latest?cb=20141207232917',
+                    image: './img/manjula.png',
                     "color": "#ccc"
                 }
             },
@@ -31,7 +31,7 @@ var springfieldData = {
                     "y": -389.5007753121328,
                     "scale": 1.5,
                     name: 'Springfield for Fair & Impartial Education',
-                    image: 'https://vignette.wikia.nocookie.net/simpsons/images/4/48/SpringfieldElementary3.jpg/revision/latest?cb=20100331224100',
+                    image: './img/school.jpg',
                     "color": "#ccc"
                 }
             },
@@ -43,7 +43,7 @@ var springfieldData = {
                     "scale": 1.5,
                     "name": "Mr. Charles Montgomery Burns",
 
-                    image: 'https://upload.wikimedia.org/wikipedia/en/5/56/Mr_Burns.png',
+                    image: './img/burns.png',
                     "color": "#ccc"
                 }
             },
@@ -55,7 +55,7 @@ var springfieldData = {
                     "scale": 1.5,
                     name: 'Lyle Lanley',
 
-                    image: 'https://vignette.wikia.nocookie.net/simpsons/images/1/15/Lyle_Lanley_Tapped_Out.png/revision/latest?cb=20180401214124',
+                    image: './img/lyle.png',
                     "color": "#ccc"
                 }
             },
@@ -76,7 +76,7 @@ var springfieldData = {
                     "y": -365.4618117845673,
                     "scale": 1,
                     name: 'Mayor Quimby for Mayor 2018',
-                    image: 'https://vignette.wikia.nocookie.net/simpsons/images/e/e0/Vote_quimbya.jpg/revision/latest?cb=20100424171857',
+                    image: './img/Vote_quimbya.jpg',
                     "color": "#ccc"
                 }
             },
@@ -86,7 +86,7 @@ var springfieldData = {
                     "x": 802.7842902606667,
                     "y": -212.70804453521671,
                     "scale": 1,
-                    "name": "Officeholder committees",
+                    "name": "Lisa Simpson",
                     "color": "#ccc"
                 }
             },
@@ -96,7 +96,7 @@ var springfieldData = {
                     "x": 948.8336594126731,
                     "y": -261.02075598342105,
                     "scale": 1,
-                    "name": "Legal defense committee",
+                    "name": "Springfield Police Officers Beneficial Association PAC",
                     "color": "#ccc"
                 }
             },
@@ -147,7 +147,7 @@ var springfieldData = {
                     "x": 687.5341182115973,
                     "y": 189.7832835463842,
                     "scale": 1,
-                    "name": "Investments"
+                    "name": "Investment: Springfild Monorail"
                 }
             },
             "u166l0bqy": {
@@ -156,7 +156,7 @@ var springfieldData = {
                     "x": 719.2751413806751,
                     "y": 95.21136284583918,
                     "scale": 1,
-                    "name": "Real property"
+                    "name": "Real property: minority owner Kwik-E-Mart"
                 }
             },
             "KLkAWTnCI": {
@@ -165,7 +165,7 @@ var springfieldData = {
                     "x": 235.47934481172533,
                     "y": 16.848678486989442,
                     "scale": 1,
-                    "name": "Gifts",
+                    "name": "Gifts: Kamp Krusty's Travel Services",
                     "color": "#ccc"
                 }
             },
@@ -176,7 +176,7 @@ var springfieldData = {
                     "y": -698.164528580348,
                     "scale": 2,
                     name: 'Dr. Julius Hibbert',
-                    image: 'https://vignette.wikia.nocookie.net/simpsons/images/6/67/Tapped_Out_Unlock_DrHibbert.png/revision/latest?cb=20141120144510',
+                    image: './img/hibbert.png',
                     "color": "#ccc"
                 }
             },
@@ -186,7 +186,7 @@ var springfieldData = {
                     "x": 569.1864186936889,
                     "y": 125.03012925018068,
                     "scale": 1,
-                    "name": "Business ownership",
+                    "name": "Business ownership: Quimby's Hotdogs",
                     "color": "#ccc"
                 }
             },
