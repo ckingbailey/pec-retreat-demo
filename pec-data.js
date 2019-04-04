@@ -1,5 +1,5 @@
-var springfieldData = {
-    "title": "Springfield Influence Map",
+var data = {
+    "title": "How ethics data illuminates influence",
     "graph": {
         "nodes": {
             "St2FzUw9C": {
@@ -8,8 +8,7 @@ var springfieldData = {
                     "x": 505.4649550410347,
                     "y": -64.41392962633171,
                     "scale": 3,
-                    name: 'Mayor Joseph Quimby',
-                    image: './img/quimby.png',
+                    "name": "Elected official",
                     "color": "#ccc"
                 }
             },
@@ -19,8 +18,7 @@ var springfieldData = {
                     "x": -134.6991426064971,
                     "y": -282.5497269153774,
                     "scale": 2,
-                    name: 'Manjula Nahasapeemapetilon',
-                    image: './img/manjula.png',
+                    "name": "Individuals",
                     "color": "#ccc"
                 }
             },
@@ -30,8 +28,7 @@ var springfieldData = {
                     "x": 219.4350913209369,
                     "y": -389.5007753121328,
                     "scale": 1.5,
-                    name: 'Springfield for Fair & Impartial Education',
-                    image: './img/school.jpg',
+                    "name": "PACs",
                     "color": "#ccc"
                 }
             },
@@ -41,9 +38,7 @@ var springfieldData = {
                     "x": 479.114163356632,
                     "y": -604.5589986488993,
                     "scale": 1.5,
-                    "name": "Mr. Charles Montgomery Burns",
-
-                    image: './img/burns.png',
+                    "name": "Major donors (wealthy individuals, businesses, organizations)",
                     "color": "#ccc"
                 }
             },
@@ -53,9 +48,7 @@ var springfieldData = {
                     "x": -209.4539934300319,
                     "y": -45.62427715385323,
                     "scale": 1.5,
-                    name: 'Lyle Lanley',
-
-                    image: './img/lyle.png',
+                    "name": "Lobbyists",
                     "color": "#ccc"
                 }
             },
@@ -75,8 +68,7 @@ var springfieldData = {
                     "x": 878.1242288686268,
                     "y": -365.4618117845673,
                     "scale": 1,
-                    name: 'Mayor Quimby for Mayor 2018',
-                    image: './img/Vote_quimbya.jpg',
+                    "name": "Campaign committees",
                     "color": "#ccc"
                 }
             },
@@ -86,8 +78,7 @@ var springfieldData = {
                     "x": 802.7842902606667,
                     "y": -212.70804453521671,
                     "scale": 1,
-                    "name": "Lisa Simpson",
-                    image: './img/lisa.gif',
+                    "name": "Officeholder committees",
                     "color": "#ccc"
                 }
             },
@@ -97,9 +88,8 @@ var springfieldData = {
                     "x": 948.8336594126731,
                     "y": -261.02075598342105,
                     "scale": 1,
-                    "name": "Springfield Police Officers Beneficial Association PAC",
-                    "color": "#ccc",
-                    image: './img/lou.jpg'
+                    "name": "Legal defense committee",
+                    "color": "#ccc"
                 }
             },
             "l1TaomayF": {
@@ -118,9 +108,7 @@ var springfieldData = {
                     "x": -17.478095497394555,
                     "y": 57.53897577988022,
                     "scale": 1.5,
-                    name: 'Springfield Nuclear Power Plant',
-
-                    image: 'https://vignette.wikia.nocookie.net/simpsons/images/c/c7/SmilinJoeFission.gif/revision/latest?cb=20101204223425',
+                    "name": "Businesses and industry groups",
                     "color": "#ccc"
                 }
             },
@@ -130,8 +118,7 @@ var springfieldData = {
                     "x": 907.5473968667563,
                     "y": -82.00264160748004,
                     "scale": 1,
-                    "name": "Homer J. Simpson",
-                    image: './img/homer.jpg',
+                    "name": "Official's spouse/family",
                     "color": "#ccc"
                 }
             },
@@ -141,8 +128,7 @@ var springfieldData = {
                     "x": 826.6778820076647,
                     "y": 64.67121836525104,
                     "scale": 1,
-                    "name": "Marge Simpson",
-                    image: './img/marge.png'
+                    "name": "Outside income sources"
                 }
             },
             "lqKXJDt9T": {
@@ -151,7 +137,7 @@ var springfieldData = {
                     "x": 687.5341182115973,
                     "y": 189.7832835463842,
                     "scale": 1,
-                    "name": "Investment: Springfild Monorail"
+                    "name": "Investments"
                 }
             },
             "u166l0bqy": {
@@ -160,7 +146,7 @@ var springfieldData = {
                     "x": 719.2751413806751,
                     "y": 95.21136284583918,
                     "scale": 1,
-                    "name": "Real property: minority owner Kwik-E-Mart"
+                    "name": "Real property"
                 }
             },
             "KLkAWTnCI": {
@@ -169,7 +155,7 @@ var springfieldData = {
                     "x": 235.47934481172533,
                     "y": 16.848678486989442,
                     "scale": 1,
-                    "name": "Gifts: Kamp Krusty's Travel Services",
+                    "name": "Gifts",
                     "color": "#ccc"
                 }
             },
@@ -179,8 +165,7 @@ var springfieldData = {
                     "x": 128.0391038492555,
                     "y": -698.164528580348,
                     "scale": 2,
-                    name: 'Dr. Julius Hibbert',
-                    image: './img/hibbert.png',
+                    "name": "Independent expenditures supporting officeholder/opposing opponents",
                     "color": "#ccc"
                 }
             },
@@ -190,7 +175,7 @@ var springfieldData = {
                     "x": 569.1864186936889,
                     "y": 125.03012925018068,
                     "scale": 1,
-                    "name": "Business ownership: Quimby's Hotdogs",
+                    "name": "Business ownership",
                     "color": "#ccc"
                 }
             },
@@ -200,8 +185,7 @@ var springfieldData = {
                     "x": 320.54091951857276,
                     "y": 117.96442460648875,
                     "scale": 1,
-                    "name": "Krusty the Clown",
-                    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Krustytheclown.png/220px-Krustytheclown.png',
+                    "name": "Free event tickets",
                     "color": "#ccc"
                 }
             }
@@ -877,4 +861,4 @@ var springfieldData = {
         "captions": {},
         "id": 3968
     }
-}   
+}
