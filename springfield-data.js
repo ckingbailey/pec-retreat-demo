@@ -87,6 +87,7 @@ var springfieldData = {
                     "y": -212.70804453521671,
                     "scale": 1,
                     "name": "Lisa Simpson",
+                    image: './img/lisa.gif',
                     "color": "#ccc"
                 }
             },
@@ -97,7 +98,8 @@ var springfieldData = {
                     "y": -261.02075598342105,
                     "scale": 1,
                     "name": "Springfield Police Officers Beneficial Association PAC",
-                    "color": "#ccc"
+                    "color": "#ccc",
+                    image: './img/lou.jpg'
                 }
             },
             "l1TaomayF": {
@@ -129,6 +131,7 @@ var springfieldData = {
                     "y": -82.00264160748004,
                     "scale": 1,
                     "name": "Homer J. Simpson",
+                    image: './img/homer.jpg',
                     "color": "#ccc"
                 }
             },
@@ -138,7 +141,8 @@ var springfieldData = {
                     "x": 826.6778820076647,
                     "y": 64.67121836525104,
                     "scale": 1,
-                    "name": "Marge Simpson"
+                    "name": "Marge Simpson",
+                    image: './img/marge.png'
                 }
             },
             "lqKXJDt9T": {
